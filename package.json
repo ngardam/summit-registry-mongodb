@@ -1,0 +1,70 @@
+{
+  "name": "summit-registry-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A workshop focused on building out a CRUD application with MongoDB.",
+  "proxy": "http://localhost:5000/",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.4",
+    "mongoose": "^6.0.12",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "format": "prettier --write --ignore-unknown .",
+    "lint": "eslint .",
+    "cleanup": "npm run format && npm run lint",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BurlingtonCodeAcademy/summit-registry-mongodb"
+  },
+  "keywords": [
+    "DOM",
+    "javascript"
+  ],
+  "author": "Julie Assur",
+  "license": "LicenseRef-LICENSE",
+  "bugs": {
+    "url": "https://github.com/BurlingtonCodeAcademy/summit-registry-mongodb/issues"
+  },
+  "homepage": "",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.2"
+  }
+}
